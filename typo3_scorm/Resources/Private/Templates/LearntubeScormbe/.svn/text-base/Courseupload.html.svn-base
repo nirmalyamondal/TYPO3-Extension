@@ -1,0 +1,7 @@
+<f:layout name="Defaultbe" />
+<f:flashMessages />
+<f:section name="content">
+
+<form action="{uploadFormRe}" method="post" enctype="multipart/form-data"><label for="file"><b>Select a .zip package :</b></label><input type="file" name="filedata" id="file"><input type="submit" name="submit" value="Submit" ><br><br></form>
+
+</f:section>

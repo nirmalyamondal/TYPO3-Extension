@@ -1,0 +1,5 @@
+<f:layout name="Defaultfe" />
+<f:flashMessages />
+<f:section name="content">
+<f:format.html>{result}</f:format.html>
+</f:section>

@@ -1,0 +1,14 @@
+plugin.tx_AjaxData {
+	view {
+		templateRootPath = {$plugin.tx_AjaxData.view.templateRootPath}
+		partialRootPath = {$plugin.tx_AjaxData.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_AjaxData.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_AjaxData.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}

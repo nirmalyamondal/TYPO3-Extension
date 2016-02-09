@@ -1,0 +1,31 @@
+plugin.tx_Typo3Ajax {
+	view {
+		templateRootPath = {$plugin.tx_Typo3Ajax.view.templateRootPath}
+		partialRootPath = {$plugin.tx_Typo3Ajax.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_Typo3Ajax.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_Typo3Ajax.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+
+temp.typo3_ajax_example = PAGE
+temp.typo3_ajax_example {
+    typeNum = 9903017311
+    config {
+        disableAllHeaderCode = 1
+        xhtml_cleaning = 0
+        admPanel = 0
+    }
+}
+
+typo3ajax_example < temp.typo3_ajax_example
+typo3ajax_example {
+    typeNum = 9903
+    10 < styles.content.get
+}

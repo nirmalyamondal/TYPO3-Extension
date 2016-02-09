@@ -1,0 +1,36 @@
+<!--f:be.container addCssFile="{f:uri.resource(path:'Css/back.css')}" addJsFile="{f:uri.resource(path:'Js/back.js')}"-->
+<f:be.container>
+	<div class="typo3-fullDoc">
+		<div id="typo3-docheader">
+			<div class="typo3-docheader-functions">
+				<div class="left">
+					<f:be.buttons.csh />
+					<f:be.menus.actionMenu>
+						<f:be.menus.actionMenuItem label="{f:translate(key: 'mod1_courselist')}" controller="LearntubeScormbe" action="courselist" />
+						<f:be.menus.actionMenuItem label="{f:translate(key: 'mod1_courseupload')}" controller="LearntubeScormbe" action="courseupload" />
+						<f:be.menus.actionMenuItem label="{f:translate(key: 'mod1_userlisting')}" controller="LearntubeScormbe" action="userlisting" />
+					</f:be.menus.actionMenu>
+				</div>
+				<div class="right">
+					<f:be.pagePath />
+					<f:be.pageInfo />
+				</div>
+			</div>
+			<div class="typo3-docheader-buttons">
+				<div class="left">
+
+				</div>
+				<div class="right">
+					<f:be.buttons.shortcut />
+				</div>
+			</div>
+
+		</div>
+		<div id="typo3-docbody">
+			<div id="typo3-inner-docbody">
+				<f:flashMessages renderMode="div" />
+				<f:render section="content" />
+			</div>
+		</div>
+	</div>
+</f:be.container>

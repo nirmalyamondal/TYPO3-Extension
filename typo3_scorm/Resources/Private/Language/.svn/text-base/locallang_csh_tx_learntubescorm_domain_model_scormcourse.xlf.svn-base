@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-04-01T10:17:09Z" product-name="learntube_scorm">
+		<header/>
+		<body>
+			<trans-unit id="cloud_id.description">
+				<source>cloudId</source>
+			</trans-unit>
+			<trans-unit id="course_name.description">
+				<source>courseName</source>
+			</trans-unit>
+			<trans-unit id="creation_time.description">
+				<source>creationTime</source>
+			</trans-unit>
+			<trans-unit id="update_time.description">
+				<source>updateTime</source>
+			</trans-unit>
+			<trans-unit id="score_format.description">
+				<source>scoreFormat</source>
+			</trans-unit>
+			<trans-unit id="allow_preview.description">
+				<source>allowPreview</source>
+			</trans-unit>
+			<trans-unit id="allow_review.description">
+				<source>allowReview</source>
+			</trans-unit>
+			<trans-unit id="t3e_course.description">
+				<source>t3eCourse</source>
+			</trans-unit>
+			<trans-unit id="t_title.description">
+				<source>tTitle</source>
+			</trans-unit>
+			<trans-unit id="t_header.description">
+				<source>tHeader</source>
+			</trans-unit>
+			<trans-unit id="t_image.description">
+				<source>tImage</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

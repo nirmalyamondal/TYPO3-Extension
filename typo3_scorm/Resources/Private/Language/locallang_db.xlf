@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-04-29T13:12:10Z" product-name="typo3_scorm">
+		<header/>
+		<body>
+			<trans-unit id="tx_typo3scorm_domain_model_scormcourse">
+				<source>Scorm Course</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormcourse.cloud_id">
+				<source>Cloud Id</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormcourse.course_name">
+				<source>Course Name</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormcourse.creation_time">
+				<source>Creation Time</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormcourse.update_time">
+				<source>Update Time</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormcourse.score_format">
+				<source>Score Format</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormcourse.allow_preview">
+				<source>Allow Preview</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormcourse.allow_review">
+				<source>Allow Review</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormcourse.t3e_course">
+				<source>T3e Course</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormcourse.t_title">
+				<source>Teaser Title</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormcourse.t_header">
+				<source>Teaser Header</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormcourse.t_image">
+				<source>Teaser Image</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormuser">
+				<source>Scorm User</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormuser.t3user_id">
+				<source>T3user Id</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormuser.reg_id">
+				<source>Reg Id</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormuser.scorm_cloud">
+				<source>Scorm Cloud</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormuser.scorm_local">
+				<source>Scorm Local</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormuser.completion">
+				<source>Completion</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormuser.satisfaction">
+				<source>Satisfaction</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormuser.score">
+				<source>Score</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3scorm_domain_model_scormuser.total_time">
+				<source>Total Time</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

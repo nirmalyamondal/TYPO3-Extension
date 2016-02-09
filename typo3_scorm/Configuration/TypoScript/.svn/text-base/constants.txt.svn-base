@@ -1,0 +1,30 @@
+
+plugin.tx_learntubescorm {
+	view {
+		# cat=plugin.tx_learntubescorm/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:learntube_scorm/Resources/Private/Frontend/Templates/
+		# cat=plugin.tx_learntubescorm/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:learntube_scorm/Resources/Private/Frontend/Partials/
+		# cat=plugin.tx_learntubescorm/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:learntube_scorm/Resources/Private/Frontend/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_learntubescorm//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+
+module.tx_learntubescorm {
+	view {
+		# cat=module.tx_learntubescorm/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:learntube_scorm/Resources/Private/Templates/
+		# cat=module.tx_learntubescorm/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:learntube_scorm/Resources/Private/Partials/
+		# cat=module.tx_learntubescorm/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:learntube_scorm/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=module.tx_learntubescorm//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

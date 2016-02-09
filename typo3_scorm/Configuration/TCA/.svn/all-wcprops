@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/nirmalyamondal/Typo3-Extensions.git/!svn/ver/2/trunk/learntube_scorm/Configuration/TCA
+END
+ScormUser.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/nirmalyamondal/Typo3-Extensions.git/!svn/ver/2/trunk/learntube_scorm/Configuration/TCA/ScormUser.php
+END
+ScormCourse.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nirmalyamondal/Typo3-Extensions.git/!svn/ver/2/trunk/learntube_scorm/Configuration/TCA/ScormCourse.php
+END
