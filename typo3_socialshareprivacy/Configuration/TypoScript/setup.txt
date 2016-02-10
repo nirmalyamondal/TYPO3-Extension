@@ -1,0 +1,20 @@
+#getting rid of clear.gif befor and after content
+tt_content.stdWrap.space = 0|0
+#getting rid of clear.gif befor and after headlines
+lib.stdheader.stdWrap.space = 0|0
+
+tt_content.stdWrap.outerWrap = <div class="tx_typo3socialshareprivacy_ssp" id="txtypo3socialshareprivacyssp_{field:uid}">|</div>
+tt_content.stdWrap.outerWrap.insertData = 1
+tt_content.stdWrap.outerWrap.if.isTrue.field = tx_typo3socialshareprivacy_ssp
+
+#Load javascript in all pages
+page.includeJSFooter{
+	zzz_tx_typo3socialshareprivacy_ssp_jslib1 = EXT:typo3_socialshareprivacy/Resources/Public/jscript/jquery-1.7.2.min.js
+	zzz_tx_typo3socialshareprivacy_ssp_jslib2 = EXT:typo3_socialshareprivacy/Resources/Public/jscript/jquery.md5.js
+	zzz_tx_typo3socialshareprivacy_ssp_jslib3 = EXT:typo3_socialshareprivacy/Resources/Public/jscript/jquery.socialshareprivacy.js
+	zzz_tx_typo3socialshareprivacy_ssp_jslib4 = EXT:typo3_socialshareprivacy/Resources/Public/jscript/typo3_socialshareprivacy_en.js
+}
+
+page.includeCSS {
+    tx_typo3socialshareprivacy_ssp1 =  EXT:typo3_socialshareprivacy/Resources/Public/css/typo3_socialshareprivacy.css
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-02-02T12:33:56Z" product-name="typo3_socialshareprivacy">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.tx_typo3socialshareprivacy_ssp">
+				<source>Share in Social Media</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
