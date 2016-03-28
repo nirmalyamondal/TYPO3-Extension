@@ -1,4 +1,0 @@
-<!--f:be.container addCssFile="{f:uri.resource(path:'Css/back.css')}" addJsFile="{f:uri.resource(path:'Js/back.js')}"-->
-<f:be.container>
-	<f:render section="content" />
-</f:be.container>
