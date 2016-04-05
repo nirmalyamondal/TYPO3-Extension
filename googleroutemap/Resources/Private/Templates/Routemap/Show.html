@@ -1,0 +1,21 @@
+<f:layout name="Default"/>
+<f:section name="main">
+<div class="container-fluid">
+    <f:flashMessages/>
+    <div id="googlemap"></div>
+    <div id="googlemap-searchbox" class="form-group">
+        <label for="route-source">
+            <f:translate key="tx_googleroutemap_domain_model_routemap.label_route_source"/>
+        </label>
+        <input id="route-source" type="text" autocomplete="off" class="form-control"/>
+        <ol id="route-suggest-list"></ol>
+    </div>
+    <div id="googlemap-selectbox" class="form-group">
+        <label for="route-destination">
+            <f:translate key="tx_nmgoogleroute_domain_model_address.label_route_destination"/>
+        </label>
+        <f:form.select id="route-destination" name="route-destination" options="{addresses}" class="form-control"/>
+    </div>
+    <div id="route-directions-panel"></div>
+</div>
+</f:section>

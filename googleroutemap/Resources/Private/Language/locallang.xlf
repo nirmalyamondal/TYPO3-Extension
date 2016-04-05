@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-28T23:20:19Z" product-name="googleroutemap">
+		<header/>
+		<body>
+			<trans-unit id="tx_googleroutemap_domain_model_address">
+				<source>Address for the Google Routemap</source>
+			</trans-unit>
+			<trans-unit id="tx_googleroutemap_domain_model_address.address">
+				<source>Google Routemap Address</source>
+			</trans-unit>
+			<trans-unit id="tx_googleroutemap_domain_model_address.label_route_destination">
+				<source>Destination Location</source>
+			</trans-unit>
+			<trans-unit id="tx_googleroutemap_domain_model_address.label_route_start">
+				<source>Source Location</source>
+			</trans-unit>
+			<trans-unit id="tx_googleroutemap_domain_model_address.label_select">
+				<source>Select the Destination location</source>
+			</trans-unit>
+			<trans-unit id="flexforms.settings">
+				<source>Google Route Map Settings</source>
+			</trans-unit>
+			<trans-unit id="flexforms.storage">
+				<source>Routemap Storage Page of Addresses</source>
+			</trans-unit>	
+		</body>
+	</file>
+</xliff>

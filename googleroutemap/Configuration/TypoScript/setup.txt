@@ -1,0 +1,19 @@
+plugin.tx_googleroutemap_routefind {
+	view {
+		templateRootPaths.0 = {$plugin.tx_googleroutemap_routefind.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_googleroutemap_routefind.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_googleroutemap_routefind.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_googleroutemap_routefind.persistence.storagePid}
+	}
+}
+
+page.includeCSS {
+	googleroutemap = EXT:googleroutemap/Resources/Public/Css/googleroutemap.css
+}
+
+page.includeJSFooterlibs {
+	googleroute_maps = https://maps.google.com/maps/api/js?language=en&region=IN
+  	googleroute_default = EXT:googleroutemap/Resources/Public/JavaScript/googleroutemap.js
+}

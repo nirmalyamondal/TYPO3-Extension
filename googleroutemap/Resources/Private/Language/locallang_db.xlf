@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-28T23:20:19Z" product-name="googleroutemap">
+		<header/>
+		<body>
+			<trans-unit id="tx_googleroutemap_domain_model_routemap">
+				<source>Address for the Google Route</source>
+			</trans-unit>
+			<trans-unit id="tx_googleroutemap_domain_model_routemap.address">
+				<source>Google Routemap Address</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

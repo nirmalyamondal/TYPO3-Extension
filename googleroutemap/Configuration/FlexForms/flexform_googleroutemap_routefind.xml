@@ -1,0 +1,36 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+        <langChildren>1</langChildren>
+    </meta>
+    <sheets>
+
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:googleroutemap/Resources/Private/Language/locallang.xlf:flexforms.settings
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flex_storage_page>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:googleroutemap/Resources/Private/Language/locallang.xlf:flexforms.storage
+                            </label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>10</maxitems>
+                                <minitems>1</minitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.flex_storage_page>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>
