@@ -1,0 +1,15 @@
+# Module configuration
+module.tx_backendajax {
+	persistence {
+		storagePid = {$module.tx_backendajax.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_backendajax.view.templateRootPath}
+		partialRootPath = {$module.tx_backendajax.view.partialRootPath}
+		layoutRootPath = {$module.tx_backendajax.view.layoutRootPath}
+	}
+	settings {
+		cssFile = {$module.tx_backendajax.settings.cssFile}
+	}
+
+}
