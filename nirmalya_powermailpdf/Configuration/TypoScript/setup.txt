@@ -1,0 +1,80 @@
+# Add new Field
+plugin.tx_powermail {
+	view {
+		templateRootPath >
+		templateRootPaths {
+			10 = EXT:powermail/Resources/Private/Templates/
+		}
+		partialRootPath >
+		partialRootPaths {
+			10 = EXT:powermail/Resources/Private/Partials/
+			80 = EXT:nirmalya_powermailpdf/Resources/Private/Partials/
+		}
+		layoutRootPath >
+		layoutRootPaths {
+			10 = EXT:powermail/Resources/Private/Layouts/
+		}
+	}
+}
+
+# Add new Validation
+plugin.tx_powermail {
+	settings.setup {
+		validation {
+			native = 1
+			client = 1
+			server = 1
+			customValidation {
+				107 = Nirmalya\PowermailPdf\Domain\Validator\PdfValidator
+			}
+		}
+	}
+	_LOCAL_LANG.default.validationerror_validation.107 = Please add a PDF file
+	_LOCAL_LANG.de.validationerror_validation.107 = Bitte eine bayerische PDF eintragen
+}
+#page.includeJSFooter.nirmalya_powermailpdf_lib1 = https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js
+page.includeJSFooter.nirmalya_powermailpdf_lib1 = EXT:nirmalya_powermailpdf/Resources/Public/JavaScripts/jspdf.debug.js
+page.includeJSFooter.nirmalya_powermailpdf_script = EXT:nirmalya_powermailpdf/Resources/Public/JavaScripts/PdfValidation.js
+
+page.includeCSS.nirmalya_powermailpdf_css = EXT:nirmalya_powermailpdf/Resources/Public/CSS/nirmalya_powermailpdf.css
+
+# Add new Field Properties
+config.tx_extbase{
+	persistence{
+		classes{
+			In2code\Powermail\Domain\Model\Form {
+				subclasses {
+					0 = Nirmalya\PowermailPdf\Domain\Model\Form
+				}
+			}
+			In2code\Powermail\Domain\Model\Page {
+				subclasses {
+					0 = Nirmalya\PowermailPdf\Domain\Model\Page
+				}
+			}
+			In2code\Powermail\Domain\Model\Field {
+				subclasses {
+					0 = Nirmalya\PowermailPdf\Domain\Model\Field
+				}
+			}
+			Nirmalya\PowermailPdf\Domain\Model\Form {
+				mapping {
+					tableName = tx_powermail_domain_model_form
+				}
+			}
+			Nirmalya\PowermailPdf\Domain\Model\Page {
+				mapping {
+					tableName = tx_powermail_domain_model_page
+				}
+			}
+			Nirmalya\PowermailPdf\Domain\Model\Field {
+				mapping {
+					tableName = tx_powermail_domain_model_field
+				}
+			}
+		}
+	}
+	objects {
+		In2code\Powermail\Domain\Repository\FormRepository.className = Nirmalya\PowermailPdf\Domain\Repository\FormRepository
+	}
+}

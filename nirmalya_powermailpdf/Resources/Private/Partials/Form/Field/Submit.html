@@ -1,0 +1,14 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+
+<div class="powermail_fieldwrap powermail_fieldwrap_type_submit powermail_fieldwrap_{field.marker} {field.css} {settings.styles.framework.fieldAndLabelWrappingClasses} powermail_fieldwrap_type_submit_nirmalya">
+	<div class="{settings.styles.framework.fieldWrappingClasses} {settings.styles.framework.offsetClasses}">
+		<f:if condition="{field.signedpdfbutton}">
+			<f:then>		
+					<button type="button" class="powermail_submit btn btn-primary nirmalya_pdf_submit_button button-2 button-2--no-text-in-mobile" name="button-2">{field.title}</button>
+			</f:then>
+			<f:else>					
+					<button type="submit" class="powermail_submit btn btn-primary button-2 button-2--no-text-in-mobile" name="button-2">{field.title}</button>
+			</f:else>
+		</f:if>
+	</div>
+</div>

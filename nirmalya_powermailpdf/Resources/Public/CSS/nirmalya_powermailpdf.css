@@ -1,0 +1,9 @@
+.powermail_fieldwrap_type_submit_nirmalya, .powermail_fieldwrap_type_file_nirmalya {
+	width:100%;
+	float:left;
+	clear:both;
+	margin:15px 0px;
+}
+.powermail_fieldwrap_type_submit  button:disabled{
+	background-color:#ebedef;
+}
