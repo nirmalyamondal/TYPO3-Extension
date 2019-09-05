@@ -1,0 +1,54 @@
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+# Load default processing options
+imports:	
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+editor:
+  config:
+    stylesSet:
+      # block level styles
+      #- { name: "Remove Class", element: "p", attributes: { 'class': 'removed-all-class' }}
+      - { name: "Blue Button", element: "p", attributes: { 'class': 'blue-button' }}
+      - { name: "Blue Button Link", element: ['a'], attributes: { 'class': 'blue-button-link' }}
+
+      # List styles
+      - { name: 'UL Style Disc', element: 'ul', attributes: { 'class': 'ul-style-disc' } }
+      
+    toolbarGroups:
+      - { name: clipboard, groups: [clipboard, undo] }
+      - { name: editing,   groups: [find, selection, spellchecker] }
+      - { name: links }
+      - { name: insert }
+      - { name: tools }
+      - { name: table }
+      - { name: tabletools }
+      - { name: document,  groups: [ mode, document, doctools ] }
+      - { name: others }
+      - "/"
+      - { name: basicstyles, groups: [ basicstyles, align, cleanup ] }
+      - { name: paragraph,   groups: [ list, indent, blocks, align, bidi ] }
+      - "/"
+      - { name: styles }
+      
+    justifyClasses:
+      - text-left
+      - text-center
+      - text-right
+      - text-justify
+
+    extraPlugins:
+      - justify
+      - find
+      - bidi
+    removePlugins:
+      - image
+
+    removeButtons:
+
+# Allow s and u tag
+processing:
+  allowTags:
+    - s
+    - u      

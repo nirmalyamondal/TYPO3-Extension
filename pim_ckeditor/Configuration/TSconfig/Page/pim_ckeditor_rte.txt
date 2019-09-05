@@ -1,0 +1,12 @@
+RTE { 
+	default { 
+		#preset = default, full, minimal 
+		preset = pim_ckeditor 
+		showButtons (
+			bold, italic, underline, left, center, right, justifyfull, orderedlist, unorderedlist, indent, outdent, line, link, removeformat, copy, cut, paste, undo, redo
+		)
+		toolbarOrder ( 
+			bold, italic, underline, bar, left, center, right, justifyfull, orderedlist, unorderedlist, bar, indent, outdent, linebreak, line, link, removeformat, bar, copy, cut, paste, bar, undo, redo      
+		)
+	} 
+} 

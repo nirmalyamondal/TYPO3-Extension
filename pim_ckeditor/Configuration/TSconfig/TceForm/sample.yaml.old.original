@@ -1,0 +1,75 @@
+# Load default processing options
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+  config:
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:template_site/Resources/Public/Styles/Rte.css"]
+    width: "600px"
+    resize_enabled: true
+    resize_dir: 'both'
+    resize_maxWidth: 750
+    resize_minWidth: 400
+    uiColor: "#F8F8F8"
+
+    format_tags: "p;h1;h2;h3;h4;h5;pre"
+
+    stylesSet:
+      # block level styles
+      - { name: "align-left", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-left' }}
+      - { name: "align-center", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-center' }}
+      - { name: "align-right", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-right' }}
+      - { name: "align-justify", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-justify' }}
+      - { name: "Tiny Paragraph", element: "p", attributes: { 'class': 'p-tiny' }}
+      # Inline styles
+      - { name: "Important", element: "span", attributes: { 'class': 'c-important' }}
+      - { name: "Tiny Word", element: "span", attributes: { 'class': 'c-tiny' }}
+      # List styles
+      - { name: 'UL Style 1', element: 'ul', attributes: { 'class': 'ul-style1' } }
+      - { name: 'UL Style 2', element: 'ol', attributes: { 'class': 'ul-style2' } }
+      - { name: 'No UL Bullets', element: 'ul', attributes: { 'class': 'no-bullet' } }
+
+    toolbar:
+      - [ 'Link', 'Unlink', 'Anchor', 'Table', 'SpecialChar', 'CodeSnippet', 'Youtube' ]
+      - [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ]
+      - [ 'NumberedList', 'BulletedList']
+      - [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord' ]
+      - [ 'Undo', 'Redo', 'RemoveFormat', 'ShowBlocks' ]
+      - "/"
+      - [ 'Format', 'Styles' ]
+      - [ 'Bold', 'Italic', 'Underline', 'Blockquote', 'Subscript', 'Superscript']
+      - [ 'Source', 'Maximize', 'About']
+
+    extraPlugins:
+      - justify
+      - specialchar
+      - showblocks
+      - codesnippet
+
+    justifyClasses:
+      - align-left
+      - align-center
+      - align-right
+      - align-justify
+
+    codeSnippet_theme: 'monokai_sublime'
+
+    #external config
+    youtube_width: '550'
+
+    removePlugins:
+      - image
+
+    removeButtons:
+
+  externalPlugins:
+    youtube: { resource: "EXT:template_site/Resources/Public/JavaScript/Ckeditor/Plugins/youtube/" }
+
+
+processing:
+  allowTags:
+    - iframe
